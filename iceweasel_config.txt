@@ -1,0 +1,7 @@
+browser.newtab.url=about:blank
+image.animation_mode=none
+geo.enabled=false
+browser.startup.page=0
+browser.safebrowsing.enabled=false
+browser.safebrowsing.malware.enabled=false
+browser.preferences.inContent=false
