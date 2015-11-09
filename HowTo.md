@@ -4,6 +4,10 @@
 
     convert -density 300 -threshold 50% input.pdf output.pdf
 
+## Join PDFs
+
+    pdftk in1.pdf in2.pdf cat output out1.pdf
+
 # Videos
 
 ## Drop audio track from movie
