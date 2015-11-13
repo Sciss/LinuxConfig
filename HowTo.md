@@ -14,3 +14,8 @@
 
 Use the `-an` option for `avconv`.
 
+# Vim
+
+##  Toggle auto-indenting for code paste 
+
+Before pasting: `:set paste`. Afterwards go back to normal mode: `:set nopaste`
