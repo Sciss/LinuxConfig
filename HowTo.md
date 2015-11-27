@@ -14,6 +14,18 @@
 
 Use the `-an` option for `avconv`.
 
+## Make video from image sequence with offset and num-frames
+
+    avconv -r <fps> -ss <hh:mm:ss> -vframes <num-frames> -i in_%d.png out.mp4
+
+Where `avconv` doesn't have the `-start_number` option in older versions.
+
+## Concat two videos
+
+    avconv -i concat:file1.h264\|file2.h264 -c copy -f mp4 out.mp4
+
+Note: doesn't work with input mp4 format.
+
 # Vim
 
 ##  Toggle auto-indenting for code paste 
