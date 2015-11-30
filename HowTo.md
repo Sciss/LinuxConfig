@@ -56,3 +56,8 @@ iface eth0 inet dhcp
 allow-hotplug wlan0
 ```
 
+# Gnome
+
+Kill and restart tracker:
+
+    tracker-control -r
