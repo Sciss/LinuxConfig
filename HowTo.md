@@ -26,6 +26,61 @@ Where `avconv` doesn't have the `-start_number` option in older versions.
 
 Note: doesn't work with input mp4 format.
 
+## Author a DVD-Video
+
+This converts a HD input video (e.g. h.264) into a DVD-Video. I didn't have
+sound in this example, therefore the sound codec is a bit crappy, in particular
+to convert first to mp3 then to ac3 doesn't make sense, so one would have to
+improvise these steps eventually.
+
+The following debian packages are needed:
+
+ - `libav-tools` - for `avconv`
+ - `mjpegtools` - for `mplex`
+ - `dvdauthor`
+ - `growisofs`
+
+First convert to MPEG (see [here](https://superuser.com/questions/835871/how-to-make-an-mpeg2-video-file-with-the-highest-quality-possible-using-ffmpeg)):
+
+    avconv -i in.mp4 -shortest -c:v mpeg2video -qscale:v 2 -target pal-dvd -c:a libmp3lame "out.mpg"
+
+Then demux:
+
+    avconv -i out.mpg -vcodec copy out.m2v
+    avconv -i out.mpg -vcodec copy out.ac3
+
+Then remux:
+
+    mplex -f 8 -o out_remux.mpg out.m2v out.ac3
+
+Then configure `dvdauthor` by creating a file `out.xml` with the following content:
+
+```xml
+<dvdauthor>
+    <vmgm />
+    <titleset>
+        <titles>
+            <pgc>
+                <vob file="out_remux.mpg" />
+                <post>
+                    jump title 1;
+                </post>
+            </pgc>
+        </titles>
+    </titleset>
+</dvdauthor>
+```
+
+This ensures the video is automatically looped. Create the `VIDEO_TS` folder:
+
+    mkdir out-DVD
+    export VIDEO_FORMAT=PAL
+    dvdauthor -o out-DVD -x out.xml
+
+Then burn the DVD:
+
+    growisofs -v -Z /dev/dvd -dvd-video -V out out-DVD
+
 # Vim
 
 ##  Toggle auto-indenting for code paste 
