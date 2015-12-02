@@ -49,7 +49,7 @@ Then demux:
     avconv -i out.mpg -vcodec copy out.m2v
     avconv -i out.mpg -vcodec copy out.ac3
 
-Then remux:
+Then remux (see [here](https://superuser.com/questions/465666/how-to-author-a-looping-dvd)):
 
     mplex -f 8 -o out_remux.mpg out.m2v out.ac3
 
