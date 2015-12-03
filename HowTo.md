@@ -8,6 +8,12 @@
 
     pdftk in1.pdf in2.pdf cat output out1.pdf
 
+## Convert TIFF to PDF
+
+The package `libtiff-tools` must be installed. Then
+
+    tiff2pdf -o out.pdf in.tif
+
 # Videos
 
 ## Drop audio track from movie
