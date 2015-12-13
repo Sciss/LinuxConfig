@@ -122,3 +122,12 @@ allow-hotplug wlan0
 Kill and restart tracker:
 
     tracker-control -r
+
+# Iceweasel
+
+## Uninstall Flash
+
+https://wiki.debian.org/FlashPlayer#Uninstall :
+
+    sudo update-flashplugin-nonfree --uninstall
+    sudo apt-get remove flashplugin-nonfree
