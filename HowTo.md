@@ -14,6 +14,10 @@ The package `libtiff-tools` must be installed. Then
 
     tiff2pdf -o out.pdf in.tif
 
+## Extract pages from PDF
+
+    pdftk A=in.pdf cat A<first-page>-<last-page> output out.pdf
+
 # Videos
 
 ## Drop audio track from movie
