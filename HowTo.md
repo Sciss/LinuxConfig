@@ -135,3 +135,11 @@ https://wiki.debian.org/FlashPlayer#Uninstall :
 
     sudo update-flashplugin-nonfree --uninstall
     sudo apt-get remove flashplugin-nonfree
+
+# Web Sites
+
+## Define a preview picture used when linking from Facebook
+
+In the `<head>` section:
+
+    <link rel="image_src" href="my-image.jpg" /><!--formatted-->
