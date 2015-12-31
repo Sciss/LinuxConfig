@@ -36,6 +36,12 @@ Where `avconv` doesn't have the `-start_number` option in older versions.
 
 Note: doesn't work with input mp4 format.
 
+## Trim a video
+
+    avconv -i input.mp4 -ss <start-time> -t <duration> -codec copy out.mp4
+
+Where times are `HH:MM:SS` or fractional seconds.
+
 ## Author a DVD-Video
 
 This converts a HD input video (e.g. h.264) into a DVD-Video. I didn't have
@@ -90,6 +96,10 @@ This ensures the video is automatically looped. Create the `VIDEO_TS` folder:
 Then burn the DVD:
 
     growisofs -v -Z /dev/dvd -dvd-video -V out out-DVD
+
+## Record a Screen Cast
+
+- [Vokoscreen](http://hackerspace.kinja.com/screen-recording-in-linux-1686055808)
 
 # Vim
 
