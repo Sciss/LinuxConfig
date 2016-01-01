@@ -161,3 +161,9 @@ https://wiki.debian.org/FlashPlayer#Uninstall :
 In the `<head>` section:
 
     <link rel="image_src" href="my-image.jpg" /><!--formatted-->
+
+# Misc Shell
+
+## Create a Zip file that preserves symlinks
+
+    zip --symlinks -r foo.zip foo/
