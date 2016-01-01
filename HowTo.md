@@ -42,6 +42,14 @@ Note: doesn't work with input mp4 format.
 
 Where times are `HH:MM:SS` or fractional seconds.
 
+## Split a large file into multiple
+
+    split -n <number-of-file> file.mp4
+
+The output chunks will be named `xaa`, `xab`, `xac`, ... To join them again:
+
+    cat <chunk-1> <chunk-2> ... >file.mp4
+
 ## Author a DVD-Video
 
 This converts a HD input video (e.g. h.264) into a DVD-Video. I didn't have
