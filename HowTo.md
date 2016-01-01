@@ -44,7 +44,7 @@ Where times are `HH:MM:SS` or fractional seconds.
 
 ## Split a large file into multiple
 
-    split -n <number-of-file> file.mp4
+    split -n <number-of-files> file.mp4
 
 The output chunks will be named `xaa`, `xab`, `xac`, ... To join them again:
 
