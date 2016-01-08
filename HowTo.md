@@ -139,6 +139,17 @@ iface eth0 inet dhcp
 allow-hotplug wlan0
 ```
 
+# Git
+
+## Resolve Merge Conflict
+
+In order to force git to take either version of a conflict file:
+
+- To use the file of branch that gets merged in: `git checkout --theirs the-file-name`
+- To keep the file of the current branch like it was before merge: `git checkout --ours the-file-name`
+
+See also: http://gitready.com/advanced/2009/02/25/keep-either-file-in-merge-conflicts.html
+
 # Gnome
 
 Kill and restart tracker:
