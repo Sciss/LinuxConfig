@@ -165,6 +165,13 @@ https://wiki.debian.org/FlashPlayer#Uninstall :
     sudo update-flashplugin-nonfree --uninstall
     sudo apt-get remove flashplugin-nonfree
 
+# LibreOffice
+
+## Fully fill table cell background
+
+See [here](https://ask.libreoffice.org/en/question/15307/using-styles-for-background-cell-color-in-table/): 
+Right click on cell, select "Table...", go to "Background" tab and set color "For Cell".
+
 # Web Sites
 
 ## Define a preview picture used when linking from Facebook
