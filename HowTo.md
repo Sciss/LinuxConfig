@@ -36,6 +36,10 @@ Use the `-an` option for `avconv`.
 
 Where `avconv` doesn't have the `-start_number` option in older versions.
 
+## Make image sequence from video
+
+    avconv -i input.mp4 -f image2 output-%d.jpg
+
 ## Concat two videos
 
     avconv -i concat:file1.h264\|file2.h264 -c copy -f mp4 out.mp4
