@@ -38,7 +38,9 @@ Where `avconv` doesn't have the `-start_number` option in older versions.
 
 ## Make image sequence from video
 
-    avconv -i input.mp4 -f image2 output-%d.jpg
+    avconv -i input.mp4 -f image2 output-%d.png
+
+For a lossy format such as JPG, use `-q:v 1` to get the best possible quality.
 
 ## Concat two videos
 
