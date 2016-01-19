@@ -54,6 +54,10 @@ Note: doesn't work with input mp4 format.
 
 Where times are `HH:MM:SS` or fractional seconds.
 
+## Apply fade-in/out while converting
+
+   avconv -i input.mp4 -vf fade=type=in:start_frame=0:nb_frames=25,fade=type=out:start_frame=975:nb_frames=25 output.mp4
+
 ## Split a large file into multiple
 
     split -n <number-of-files> file.mp4
