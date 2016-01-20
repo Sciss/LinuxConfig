@@ -58,6 +58,12 @@ Where times are `HH:MM:SS` or fractional seconds.
 
     avconv -i input.mp4 -vf fade=type=in:start_frame=0:nb_frames=25,fade=type=out:start_frame=975:nb_frames=25 output.mp4
 
+## Watermark a video
+
+Use this video-filter:
+
+    -vf "movie=watermark.png [watermark]; [in][watermark] overlay=10:10 [out]" 
+
 ## Split a large file into multiple
 
     split -n <number-of-files> file.mp4
