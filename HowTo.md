@@ -64,6 +64,10 @@ Use this video-filter:
 
     -vf "movie=watermark.png [watermark]; [in][watermark] overlay=10:10 [out]" 
 
+Where `10:10` is the image offset from the top-left corner. To compose multiple filters, move `[out]` to the end:
+
+    -vf "movie=watermark.png [watermark]; [in][watermark] overlay=10:10, scale=960:540 [out]" 
+
 ## Split a large file into multiple
 
     split -n <number-of-files> file.mp4
