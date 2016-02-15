@@ -185,8 +185,8 @@ See also: http://gitready.com/advanced/2009/02/25/keep-either-file-in-merge-conf
 ## Type special characters
 
 - http://fsymbols.com/keyboard/linux/compose/
-
-E.g. for 'pilcrow' paragraph sign: <kbd>Compose</kbd> (<kbd>Right-Alt</kbd>) + <kbd>p</kbd> + <kbd>!</kbd>
+- e.g. for 'pilcrow' paragraph sign: <kbd>Compose</kbd> (<kbd>Right-Alt</kbd>) + <kbd>p</kbd> + <kbd>!</kbd>
+- e.g. for 'section' paragraph sign: <kbd>Compose</kbd> (<kbd>Right-Alt</kbd>) + <kbd>o</kbd> + <kbd>s</kbd>
 
 # Iceweasel
 
