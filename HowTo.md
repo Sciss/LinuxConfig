@@ -178,9 +178,15 @@ See also: http://gitready.com/advanced/2009/02/25/keep-either-file-in-merge-conf
 
 # Gnome
 
-Kill and restart tracker:
+## Kill and restart tracker
 
     tracker-control -r
+
+## Type special characters
+
+- http://fsymbols.com/keyboard/linux/compose/
+
+E.g. for 'pilcrow' paragraph sign: <kbd>Compose</kbd> (<kbd>Right-Alt</kbd>) + <kbd>p</kbd> + <kbd>!</kbd>
 
 # Iceweasel
 
