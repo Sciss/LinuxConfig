@@ -137,9 +137,16 @@ Then burn the DVD:
 
 # Vim
 
-##  Toggle auto-indenting for code paste 
+## Toggle auto-indenting for code paste 
 
 Before pasting: `:set paste`. Afterwards go back to normal mode: `:set nopaste`
+
+# Texmaker
+
+## Change editor's spell checking language
+
+Aliases to `/usr/share/myspell` are missing. Dictionaries are found in
+`/usr/share/hunspell`. To switch, use menu Options > Configure Texmaker > Editor.
 
 # Network
 
