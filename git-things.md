@@ -14,3 +14,8 @@ there is already dirty state in `<previous-branch>`:
     git merge <previous-branch>
     git stash pop
 
+# Include a full copy of a symlink outside the main directory
+
+E.g. for linking in `all.bib` bibliography that actually sits in its own git repository.
+
+- Change from symlink `ln -s` to a "hard link" `ln`. That way git will push the full contents of the thus linked file
