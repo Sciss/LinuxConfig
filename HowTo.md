@@ -24,6 +24,16 @@ The package `libtiff-tools` must be installed. Then
 
 Where instead of `/screen` (smallest), one can also use `/ebook` (medium) or `/printer` (large).
 
+## Rotate PDF
+
+Clockwise:
+
+    pdftk in.pdf cat 1east output out.pdf # new pdftk
+
+## Single to Double Page
+
+Use preview (eog) and print to file.
+
 # Videos
 
 ## Drop audio track from movie
@@ -57,6 +67,12 @@ Where times are `HH:MM:SS` or fractional seconds.
 ## Apply fade-in/out while converting
 
     avconv -i input.mp4 -vf fade=type=in:start_frame=0:nb_frames=25,fade=type=out:start_frame=975:nb_frames=25 output.mp4
+
+## Apply Gamma correction
+
+This needs ffmpeg, avconv does not have the corresponding filter!
+
+    ffmpeg -i input.mp4 -vf eq=gamma=0.5 output.mp4
 
 ## Watermark a video
 
