@@ -240,3 +240,7 @@ In the `<head>` section:
 ## Create a Zip file that preserves symlinks
 
     zip --symlinks -r foo.zip foo/
+
+## Add to $PATH
+
+Use `~/.profile` not `~/.bash_profile`. See [here](https://unix.stackexchange.com/questions/26047/how-to-correctly-add-a-path-to-path)
