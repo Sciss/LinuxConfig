@@ -33,6 +33,12 @@ Clockwise:
 ## Single to Double Page
 
 Use preview (eog) and print to file.
+Problem with this approach is that it might not always respect page margins.
+
+Other approach:
+
+- extract individual pages: `pdftk A=in.pdf cat A1 output out1.pdf`, `pdftk A=in.pdf cat A2 output out2.pdf`, etc.
+- join double pages: `pdfjam out1.pdf out2.pdf out3.pdf ... --nup 2x1 --landscape --outfile out.pdf`
 
 # Videos
 
@@ -198,6 +204,12 @@ In order to force git to take either version of a conflict file:
 - To keep the file of the current branch like it was before merge: `git checkout --ours the-file-name`
 
 See also: http://gitready.com/advanced/2009/02/25/keep-either-file-in-merge-conflicts.html
+
+# Apt
+
+List all installed packages with versions:
+
+    dpkg-query -l
 
 # Gnome
 
