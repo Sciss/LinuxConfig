@@ -70,6 +70,10 @@ Note: doesn't work with input mp4 format.
 
 Where times are `HH:MM:SS` or fractional seconds.
 
+## Make Animated GIF
+
+    ffmpeg -i frame-%d.png -f image2pipe -vcodec ppm - | convert -delay 5 - gif:- | convert -layers Optimize - output.gif
+
 ## Apply fade-in/out while converting
 
     avconv -i input.mp4 -vf fade=type=in:start_frame=0:nb_frames=25,fade=type=out:start_frame=975:nb_frames=25 output.mp4
