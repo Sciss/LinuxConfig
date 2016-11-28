@@ -260,3 +260,8 @@ In the `<head>` section:
 ## Add to $PATH
 
 Use `~/.profile` not `~/.bash_profile`. See [here](https://unix.stackexchange.com/questions/26047/how-to-correctly-add-a-path-to-path)
+
+## Allow shutdown and reboot without entering password
+
+- https://makandracards.com/tushar/5181-how-to-shutdown-without-sudo-password-ubuntu-debian
+
