@@ -40,6 +40,13 @@ Other approach:
 - extract individual pages: `pdftk A=in.pdf cat A1 output out1.pdf`, `pdftk A=in.pdf cat A2 output out2.pdf`, etc.
 - join double pages: `pdfjam out1.pdf out2.pdf out3.pdf ... --nup 2x1 --landscape --outfile out.pdf`
 
+## Multiple Pages on One with Precise Size
+
+For instance, input pages are 106mm wide. Using `--nup 2x2 --landscape`, pdfjam will enlarge them.
+One can add the correct scaling factors as (106.0/(297.0/2)) = 0.7143
+
+    pdfjam p1.pdf p2.pdf p3.pdf p4.pdf --nup 2x2 --landscape --scale 0.7142857142857143 --outfile out.pdf
+
 # Videos
 
 ## Drop audio track from movie
