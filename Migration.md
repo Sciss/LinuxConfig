@@ -11,7 +11,7 @@
 
 - `cd ~/Documents/devel/`
 - `git clone git@github.com:Sciss/git-aware-prompt.git`
-- `vi ~/.profile`
+- `vi ~/.bashrc`
 
 And append these lines:
 
