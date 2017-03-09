@@ -40,3 +40,4 @@ git config --global user.email "contact@sciss.de"
 - Edit `/etc/locale.gen` and enable `en_DK.UTF-8 UTF-8`
 - Run `locale-gen`
 - Open Gnome 'Region & Language' settings
+
