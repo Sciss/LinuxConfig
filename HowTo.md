@@ -166,6 +166,9 @@ Then burn the DVD:
 
 ## Record a Screen Cast
 
+- Use the built in Gnome screencast recording facility: `Ctrl-Shift-Alt-R`. Make sure to
+  reserve enough time: `gsettings set org.gnome.settings-daemon.plugins.media-keys max-screencast-length 1200`
+  (limits recording to 20 minutes)
 - [Vokoscreen](http://hackerspace.kinja.com/screen-recording-in-linux-1686055808)
 
 # Vim
