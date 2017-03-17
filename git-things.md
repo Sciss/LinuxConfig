@@ -19,3 +19,10 @@ there is already dirty state in `<previous-branch>`:
 E.g. for linking in `all.bib` bibliography that actually sits in its own git repository.
 
 - Change from symlink `ln -s` to a "hard link" `ln`. That way git will push the full contents of the thus linked file
+
+# Search _in code_ on GitHub
+
+Make sure the query type is `Code`, e.g.
+
+- https://github.com/search?utf8=%E2%9C%93&q=user%3Asciss+%22mfcc%22&type=Code&ref=advsearch&l=&l=
+
