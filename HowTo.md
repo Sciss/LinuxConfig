@@ -236,8 +236,8 @@ List all installed packages with versions:
 - http://fsymbols.com/keyboard/linux/compose/
 - e.g. for 'pilcrow' paragraph sign: <kbd>Compose</kbd> (<kbd>Right-Alt</kbd>) + <kbd>p</kbd> + <kbd>!</kbd>
 - e.g. for 'section' paragraph sign: <kbd>Compose</kbd> (<kbd>Right-Alt</kbd>) + <kbd>o</kbd> + <kbd>s</kbd>
-- n-dash: <kbd>Compose</kbd> <kbd>-</kbd> <kbd>-</kbd> <kdb>.</kbd> (hyphen-hyphen-period)
-- m-dash: <kbd>Compose</kbd> <kbd>-</kbd> <kbd>-</kbd> <kdb>-</kbd> (hyphen-hyphen-hyphen)
+- n-dash: <kbd>Compose</kbd> <kbd>-</kbd> <kbd>-</kbd> <kbd.</kbd> (hyphen-hyphen-period)
+- m-dash: <kbd>Compose</kbd> <kbd>-</kbd> <kbd>-</kbd> <kbd>-</kbd> (hyphen-hyphen-hyphen)
 
 # Iceweasel
 
