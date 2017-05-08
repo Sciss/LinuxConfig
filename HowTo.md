@@ -186,7 +186,7 @@ Aliases to `/usr/share/myspell` are missing. Dictionaries are found in
 
 # Network
 
-Restore a sane network configuration:
+## Restore a sane network configuration
 
     sudo vi /etc/network/interfaces
 
@@ -207,6 +207,12 @@ iface eth0 inet dhcp
 # wlan
 allow-hotplug wlan0
 ```
+
+## Disable IPv6
+
+When firewall causes IPv6 to hang:
+
+    sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
 
 # Git
 
