@@ -245,6 +245,20 @@ List all installed packages with versions:
 - n-dash: <kbd>Compose</kbd> <kbd>-</kbd> <kbd>-</kbd> <kbd>.</kbd> (hyphen-hyphen-period)
 - m-dash: <kbd>Compose</kbd> <kbd>-</kbd> <kbd>-</kbd> <kbd>-</kbd> (hyphen-hyphen-hyphen)
 
+# Debian
+
+Recover password:
+
+ - interrupt GRUB by pressing any key
+ - enter edit command by pressing 'e'
+ - find the first `setparams` sections
+ - within that, find the `linux /vmlinuz...` line and
+   append ` init=/bin/bash`
+ - press F10 to boot
+ - at the bash prompt enter `mount -rw -o remount /`
+ - enter `passwd <username>` and give new password
+ - reboot (how? don't know; you can switch off/on hard)
+
 # Iceweasel
 
 ## Uninstall Flash
