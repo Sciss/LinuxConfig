@@ -247,7 +247,7 @@ List all installed packages with versions:
 
 # Debian
 
-Recover password:
+## Recover password
 
  - interrupt GRUB by pressing any key
  - enter edit command by pressing 'e'
@@ -258,6 +258,10 @@ Recover password:
  - at the bash prompt enter `mount -rw -o remount /`
  - enter `passwd <username>` and give new password
  - reboot (how? don't know; you can switch off/on hard)
+
+## Watch SysLog
+
+    watch cat /var/log/syslog
 
 # Iceweasel
 
