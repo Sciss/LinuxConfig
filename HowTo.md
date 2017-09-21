@@ -47,6 +47,21 @@ One can add the correct scaling factors as (106.0/(297.0/2)) = 0.7143
 
     pdfjam p1.pdf p2.pdf p3.pdf p4.pdf --nup 2x2 --landscape --scale 0.7142857142857143 --outfile out.pdf
 
+# Sound System
+
+## Route pulseaudio through jack
+
+If not yet installed:
+
+    sudo apt install pulseaudio-module-jack
+
+Then devices can be created ad-hoc:
+
+    pactl load-module module-jack-sink channels=2
+    pactl load-module module-jack-source channels=2
+
+Where 'sink' is an audio _output_ device for applications. So to route audio output from an application via jack to another application, we need to select the 'Jack sink' device.
+
 # Videos
 
 ## Drop audio track from movie
