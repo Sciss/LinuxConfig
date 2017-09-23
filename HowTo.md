@@ -240,6 +240,10 @@ In order to force git to take either version of a conflict file:
 
 See also: http://gitready.com/advanced/2009/02/25/keep-either-file-in-merge-conflicts.html
 
+## Display Remote URL
+
+    git config --get remote.origin.url
+
 # Apt
 
 List all installed packages with versions:
