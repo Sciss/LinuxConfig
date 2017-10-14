@@ -62,6 +62,14 @@ Then devices can be created ad-hoc:
 
 Where 'sink' is an audio _output_ device for applications. So to route audio output from an application via jack to another application, we need to select the 'Jack sink' device.
 
+## Set sound card volume
+
+E.g. if USB device is second card:
+
+    amixer -c 1 set Speaker 6DB-
+
+Device index (`-c`) is identical with list shown in `alsamixer`.
+
 # Videos
 
 ## Drop audio track from movie
