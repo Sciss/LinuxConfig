@@ -328,3 +328,9 @@ Use `~/.profile` not `~/.bash_profile`. See [here](https://unix.stackexchange.co
 
 - https://makandracards.com/tushar/5181-how-to-shutdown-without-sudo-password-ubuntu-debian
 
+## Check differences between two directories
+
+Ignoring owner, group, permissions; ignoring newer files in upstream (`u`):
+
+    rsync -rltDuv --dry-run --itemize-changes --exclude=.git downstream-dir upstream-dir >changes.txt
+
