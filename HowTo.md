@@ -334,3 +334,5 @@ Ignoring owner, group, permissions; ignoring newer files in upstream (`u`):
 
     rsync -rltDuv --dry-run --itemize-changes --exclude=.git downstream-dir upstream-dir >changes.txt
 
+Link: [Understanding the output of rsync --itemize-changes](http://andreafrancia.blogspot.co.at/2010/03/as-you-may-know-rsyncs-delete-options.html)
+
