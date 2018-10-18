@@ -336,3 +336,8 @@ Ignoring owner, group, permissions; ignoring newer files in upstream (`u`):
 
 Link: [Understanding the output of rsync --itemize-changes](http://andreafrancia.blogspot.co.at/2010/03/as-you-may-know-rsyncs-delete-options.html).
 This assumes updating _upstream_ with stuff that is only in _downstream_. Multiple `--exclude=` entries are possible.
+
+_N.B.:_ To compare two directories, omit the directory name in the upstream directory, e..g
+
+    rsync -rltDuv --dry-run --itemize-changes --exclude=.git --exclude=no_bak /data/projects/Almat/events /media/hhrutz/Almat1/  >changes1.txt
+
