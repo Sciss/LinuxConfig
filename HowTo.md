@@ -70,6 +70,16 @@ E.g. if USB device is second card:
 
 Device index (`-c`) is identical with list shown in `alsamixer`.
 
+## Run Jack at sampling rate differing from hardware
+
+E.g. run Jack at 96k while internal sound card is at 48k:
+
+    jackd -d dummy -r 96000
+    alsa_in -d hw:0 -r 48000
+    alsa_out -d hw:0 -r 48000
+
+Then start QJackCtl and patch the jack clients.
+
 # Videos
 
 ## Drop audio track from movie
