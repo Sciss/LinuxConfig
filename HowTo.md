@@ -204,6 +204,11 @@ Then burn the DVD:
   (limits recording to 20 minutes)
 - [Vokoscreen](http://hackerspace.kinja.com/screen-recording-in-linux-1686055808)
 
+In order to overlay key presses, install screenkey or key-mom. The former seems broken on Debian 9
+(cannot open and adjust settings). E.g.
+
+    key-mon -t big-letters --nomouse --backgroundless
+
 # Vim
 
 ## Toggle auto-indenting for code paste 
