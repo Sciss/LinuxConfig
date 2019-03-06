@@ -204,10 +204,16 @@ Then burn the DVD:
   (limits recording to 20 minutes)
 - [Vokoscreen](http://hackerspace.kinja.com/screen-recording-in-linux-1686055808)
 
-In order to overlay key presses, install screenkey or key-mom. The former seems broken on Debian 9
-(cannot open and adjust settings). E.g.
+In order to overlay key presses, install screenkey or key-mom. 
 
-    key-mon -t big-letters --nomouse --backgroundless
+    $ sudo apt install key-mon
+    $ key-mon -t big-letters --nomouse --backgroundless
+
+For screenkey, the debian package is too outdated. Simply clone the repository and start locally:
+
+    $ git clone https://gitlab.com/wavexx/screenkey.git
+    $ cd screenkey
+    $ ./screenkey --no-systray --show-settings
 
 # Vim
 
