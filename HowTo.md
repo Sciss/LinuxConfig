@@ -47,6 +47,14 @@ One can add the correct scaling factors as (106.0/(297.0/2)) = 0.7143
 
     pdfjam p1.pdf p2.pdf p3.pdf p4.pdf --nup 2x2 --landscape --scale 0.7142857142857143 --outfile out.pdf
 
+## Convert Markdown to PDF
+
+Use pandoc:
+
+    sudo apt install pandoc
+
+    pandoc -o output.pdf input.md
+
 # Sound System
 
 ## Route pulseaudio through jack
