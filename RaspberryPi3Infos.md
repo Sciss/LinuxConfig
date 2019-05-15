@@ -69,6 +69,7 @@ In `/boot/config.txt`:
 - static IP: http://www.modmypi.com/blog/how-to-give-your-raspberry-pi-a-static-ip-address-update
 - ssh server might need to be enabled through `sudo raspi-config` (advanced settings; newer versions: interfacing). With defaults, you need `ssh pi@10.0.0.1`. Default password is `raspberry`
 - find MAC address: `cat /sys/class/net/eth0/address`
+- copy ssh key so we can log in without entering password: `ssh-copy-id pi@<ip-address>`
 
 ## Misc:
 
