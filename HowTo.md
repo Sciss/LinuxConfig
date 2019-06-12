@@ -118,6 +118,10 @@ Note: doesn't work with input mp4 format.
 
 Where times are `HH:MM:SS` or fractional seconds.
 
+## Copy audio track from one video to another
+
+    ffmpeg -i has-video.mp4 -i has-audio.mp4 -c:v copy -map 0:v:0 -map 1:a:0 out.mp4
+
 ## Make Animated GIF
 
     ffmpeg -i frame-%d.png -f image2pipe -vcodec ppm - | convert -delay 5 - gif:- | convert -layers Optimize - output.gif
