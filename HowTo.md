@@ -88,6 +88,10 @@ E.g. run Jack at 96k while internal sound card is at 48k:
 
 Then start QJackCtl and patch the jack clients.
 
+## Where are the QJackCtl settings
+
+    ~/.config/rncbc.org/QjackCtl.conf 
+
 # Videos
 
 ## Drop audio track from movie
