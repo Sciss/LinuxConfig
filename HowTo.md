@@ -92,6 +92,8 @@ Then start QJackCtl and patch the jack clients.
 
     ~/.config/rncbc.org/QjackCtl.conf 
 
+See [code](https://gist.github.com/Sciss/4ba53e36b21b8034d1e4442fa8ebce82) for sorting presets.
+
 # Videos
 
 ## Drop audio track from movie
