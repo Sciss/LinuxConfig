@@ -345,6 +345,14 @@ https://wiki.debian.org/FlashPlayer#Uninstall :
 See [here](https://ask.libreoffice.org/en/question/15307/using-styles-for-background-cell-color-in-table/): 
 Right click on cell, select "Table...", go to "Background" tab and set color "For Cell".
 
+# Reveal.js
+
+To run via node:
+
+    npm start
+
+To export slides as PDF: http://localhost:8000/?print-pdf
+
 # Web Sites
 
 ## Define a preview picture used when linking from Facebook
