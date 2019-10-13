@@ -132,6 +132,9 @@ Where times are `HH:MM:SS` or fractional seconds.
 
     ffmpeg -i frame-%d.png -f image2pipe -vcodec ppm - | convert -delay 5 - gif:- | convert -layers Optimize - output.gif
 
+If running out of memory ("cache resources exhausted"), edit `/etc/ImageMagick-6/policy.xml` according to
+[this answer](https://superuser.com/questions/1178666/imagemagick-convert-quits-after-some-pages#1208170).
+
 ## Apply fade-in/out while converting
 
     avconv -i input.mp4 -vf fade=type=in:start_frame=0:nb_frames=25,fade=type=out:start_frame=975:nb_frames=25 output.mp4
