@@ -6,7 +6,8 @@ Note: Some of this stuff is old and probably outdated!
 - screen resolution: https://www.raspberrypi.org/documentation/configuration/config-txt.md
 - change keyboard layout to US: `/etc/default/keyboard` and `XKBLAYOUT="us"` instead of `gb`.
 - configure read-only SD: https://hallard.me/raspberry-pi-read-only/
-- auto-start: create a `foo.desktop` entry in `~/.config/autostart/`: https://raspberrypi.stackexchange.com/questions/8805/auto-login-into-lxde-and-auto-start-video-player-omxplayer#43350
+- auto-start: create a `foo.desktop` entry in `~/.config/autostart/`: https://raspberrypi.stackexchange.com/questions/8805/auto-login-into-lxde-and-auto-start-video-player-omxplayer#43350 ;
+  another place might be `/etc/xdg/lxsession/LXDE-pi/autostart`
 - free space: `sudo apt-get purge wolfram-engine`
 - force screen resolution: in `/boot/config.txt` enable `hdmi_group=2` and `hdmi_mode=23` (1280 x 768); mode list: https://www.raspberrypi.org/documentation/configuration/config-txt.md
 - backup and restore SD card: https://thepihut.com/blogs/raspberry-pi-tutorials/17789160-backing-up-and-restoring-your-raspberry-pis-sd-card ; backup with progress: `sudo apt-get install pv`; `sudo dd if=/dev/sdb | pv | dd of=~/disk.img` ; in Stretch, the device is not `/dev/sdb` but something like `/dev/mmcblk0` (use `df -h` to list)
