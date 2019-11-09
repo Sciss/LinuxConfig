@@ -70,6 +70,15 @@ Then devices can be created ad-hoc:
 
 Where 'sink' is an audio _output_ device for applications. So to route audio output from an application via jack to another application, we need to select the 'Jack sink' device.
 
+## Disabling pulseaudio "volume coupling"
+
+E.g. VLC's volume slider is linked to the main pulseaudio volume. To [disable this misfeature](https://200ok.ch/posts/2019-05-20_disable_flatvolume_for_pulseaudio.html):
+
+    mkdir ~/.pulse
+    vim ~/.pulse/daemon.conf
+
+Put contents `flat-volumes=no`, save and exit, restart pulse with `pulseaudio -k`.
+
 ## Set sound card volume
 
 E.g. if USB device is second card:
