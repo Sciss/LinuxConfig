@@ -14,3 +14,17 @@ select SU again, now find 'CA' mode, keep encoder pressed.
 __N.B.__ Phantom power settings cannot be accessed on the device, but must be copied via TotalMix on macOS or Windows to the device first.
 Six (?) setups can be recalled within the SU sub-menu.
 
+# Scarlett 18i20
+
+There can be corrupt alsastate / USB when accidentally disconnecting the device without properly shutting down Jack (I think).
+
+As a result, the analog outputs are broken (output DC or nothing at all).
+
+The only reliable work-around is this:
+
+- turn off the Scarlett
+- connect it to the Mac Mini, and boot it up under OS X
+- check the Scarlett mix control; possibly restore correct settings
+- test (in OS X) that playback works from SuperCollider
+- on the Linux machine: `sudo rm /var/lib/alsa/asound.state`; reboot; remove it again, reboot;
+- put the Scarlett back onto the Linux machine
