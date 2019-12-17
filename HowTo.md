@@ -323,6 +323,20 @@ List all installed packages with versions:
 - n-dash: <kbd>Compose</kbd> <kbd>-</kbd> <kbd>-</kbd> <kbd>.</kbd> (hyphen-hyphen-period)
 - m-dash: <kbd>Compose</kbd> <kbd>-</kbd> <kbd>-</kbd> <kbd>-</kbd> (hyphen-hyphen-hyphen)
 
+## Fix applications that look bad in dark skin
+
+For example, Thunderbird has bad colour scheme for quoted messages (blue on dark gray). To force light skin,
+edit the `.desktop` file, such as `/usr/share/applications/thunderbird.desktop`. Edit the `Exec` entry by
+prefixing with an environment variable, e.g. from
+
+    Exec=/usr/bin/thunderbird %u
+
+to
+
+    Exec=env GTK_THEME=Adwaita:light /usr/bin/thunderbird %u
+
+This will be lost if the application is updated, though.
+
 # Debian
 
 ## Recover password
