@@ -4,7 +4,7 @@ Assuming Raspbian Buster.
 
 Mount the boot partition on a desktop computer. Go into its root directory and write `touch ssh`.
 
-To find the Pi on the net, `ssh pi@raspberry.local` should be enough. You can also use `nmap`:
+To find the Pi on the net, `ssh pi@raspberrypi.local` should be enough. You can also use `nmap`:
 
     sudo nmap -sn 192.168.0.0/24
 

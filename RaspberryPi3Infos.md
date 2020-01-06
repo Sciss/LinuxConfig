@@ -67,7 +67,8 @@ In `/boot/config.txt`:
 ## Network:
 
 - https://www.raspberrypi.org/documentation/remote-access/ssh/
-- static IP: http://www.modmypi.com/blog/how-to-give-your-raspberry-pi-a-static-ip-address-update
+- static IP: http://www.modmypi.com/blog/how-to-give-your-raspberry-pi-a-static-ip-address-update ; in particular
+  `sudo vi /etc/dhcpcd.conf` and add lines `interface eth0` and `static ip_address=192.168.0.111/24` where `111` should be replaced.
 - ssh server might need to be enabled through `sudo raspi-config` (advanced settings; newer versions: interfacing). With defaults, you need `ssh pi@10.0.0.1`. Default password is `raspberry`
 - find MAC address: `cat /sys/class/net/eth0/address`
 - copy ssh key so we can log in without entering password: `ssh-copy-id pi@<ip-address>`
