@@ -2,13 +2,30 @@ Assuming Raspbian Buster.
 
 ## Enabling SSH on a fresh Buster image
 
-Mount the boot partition on a desktop computer. Go into its root directory and write `touch ssh`.
+Mount the boot partition on a desktop computer. Go into its root (`/`) directory of the `boot` (first) partition, and write `touch ssh`.
 
 To find the Pi on the net, `ssh pi@raspberrypi.local` should be enough. You can also use `nmap`:
 
     sudo nmap -sn 192.168.0.0/24
 
 Where the IP depends on the desktop computer's eth0 IP.
+
+__In general, it should be sufficient to just `ssh pi@raspberrypi.local`__
+
+## Static IP
+
+Run `sudo vi /etc/dhcpcd.conf` and add lines
+
+    interface eth0
+    static ip_address=192.168.0.111/24
+
+where 111 should be replaced.
+
+When connecting to a wifi network that unfortunately uses the same IP space, one can override the DNS through
+
+    sudo vi /etc/resolv.conf
+
+And change, for example, to `8.8.8.8`
 
 ## Firmware
 
@@ -23,6 +40,8 @@ Update to latest firmware
 (last thing I saw was 4.19.88)
 
 ## VNC
+
+__Note:__ changing `config.txt` is no longer needed; just set explicit resolution in `raspi-config`.
 
 For it to work without HDMI connected, in addition to `/boot/config.txt`:
 
