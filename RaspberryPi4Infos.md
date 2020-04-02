@@ -73,3 +73,8 @@ And replace contents by
 
 - GPU: `vcgencmd measure_temp`
 - CPU: `cat /sys/class/thermal/thermal_zone0/temp`
+
+## Forget Wifi Passwords
+
+`sudo vi /etc/wpa_supplicant/wpa_supplicant.conf` and delete `network=` entries.
+
