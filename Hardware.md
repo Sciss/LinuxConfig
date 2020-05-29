@@ -28,3 +28,23 @@ The only reliable work-around is this:
 - test (in OS X) that playback works from SuperCollider
 - on the Linux machine: `sudo rm /var/lib/alsa/asound.state`; reboot; remove it again, reboot;
 - put the Scarlett back onto the Linux machine
+
+# LogiLink UA0099 (Cmedia 6206)
+
+There might be problems with using the analog Line-In. Apparently the card can have the capture feature of this input turned off, although there is no apparent switch in the ALSA Mixer.
+This can be verfied: Find out the card number using `aplay -l` -- let's assume it's `card 1`. Then `amixer -c1` gives the state of all controls. Check that `PCM Capture Source` is set to `Line`
+(this can be set in `alsamixer`). Additionally, check the status of the corresponding control:
+
+```
+$ amixer -c1 sget Line
+Simple mixer control 'Line',0
+  Capabilities: pvolume cvolume pswitch pswitch-joined cswitch cswitch-joined
+  Playback channels: Front Left - Front Right
+  Capture channels: Front Left - Front Right
+  Limits: Playback 0 - 8065 Capture 0 - 6928
+  Front Left: Playback 6209 [77%] [0.25dB] [off] Capture 0 [0%] [-16.00dB] [off]   // oh noes!
+  Front Right: Playback 6209 [77%] [0.25dB] [off] Capture 0 [0%] [-16.00dB] [off]
+```
+
+To enable the capture mode here, and set volume, use `amixer -c1 set Line cap` and (for example) `amixer -c1 set Line 6dB-`.
+
