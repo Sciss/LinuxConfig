@@ -10,8 +10,8 @@ Note: Some of this stuff is old and probably outdated!
   another place might be `/etc/xdg/lxsession/LXDE-pi/autostart`
 - free space: `sudo apt-get purge wolfram-engine`
 - force screen resolution: in `/boot/config.txt` enable `hdmi_group=2` and `hdmi_mode=23` (1280 x 768); mode list: https://www.raspberrypi.org/documentation/configuration/config-txt.md
-- backup and restore SD card: https://thepihut.com/blogs/raspberry-pi-tutorials/17789160-backing-up-and-restoring-your-raspberry-pis-sd-card ; backup with progress: `sudo apt-get install pv`; `sudo dd if=/dev/sdb | pv | dd of=~/disk.img` ; in Stretch, the device is not `/dev/sdb` but something like `/dev/mmcblk0` (use `df -h` to list)
-- shrink sd card image: http://www.aoakley.com/articles/2015-10-09-resizing-sd-images.php
+- backup and restore SD card: https://thepihut.com/blogs/raspberry-pi-tutorials/17789160-backing-up-and-restoring-your-raspberry-pis-sd-card ; backup with progress: `sudo apt-get install pv`; `sudo dd if=/dev/mmcblk0 | pv | dd of=~/disk.img` ; (use `df -h` to list of devices)
+- shrink sd card image: http://www.aoakley.com/articles/2015-10-09-resizing-sd-images.php -- now you can use `raspbian-shrink` from [this repository](https://github.com/aoakley/cotswoldjam).
 - downgrade firmware when WiringPi complains "Unable to determine hardware version. I see: Hardware   : BCM2835": `sudo rpi-update 52241088c1da59a359110d39c1875cda56496764`
 
 ## Getting a USB sound card to work:
