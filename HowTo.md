@@ -355,6 +355,18 @@ This will be lost if the application is updated, though.
 
     watch cat /var/log/syslog
 
+## Create a RAM disk
+
+See https://www.linuxbabe.com/command-line/create-ramdisk-linux
+
+    mkdir /tmp/ramdisk
+    chmod 777 /tmp/ramdisk
+    sudo mount -t tmpfs -o size=1024m myramdisk /tmp/ramdisk
+
+To release:
+
+    sudo umount /tmp/ramdisk/
+
 # Iceweasel
 
 ## Uninstall Flash
