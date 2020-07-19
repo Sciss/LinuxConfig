@@ -127,6 +127,12 @@ For a lossy format such as JPG, use `-q:v 1` to get the best possible quality.
 
 Note: doesn't work with input mp4 format.
 
+## Interleave audio and video with offset and trim
+
+    ffmpeg -i video.webm -itsoffset 0.1 -i audio.aif -ss 00:00:03 -t 00:02:37 out.mp4
+
+Here the video is offset by 0.1 seconds against the sound, the total file is trimmed to begin at 3 seconds and last for 2 min 37 sec.
+
 ## Trim a video
 
     avconv -i input.mp4 -ss <start-time> -t <duration> -codec copy out.mp4
