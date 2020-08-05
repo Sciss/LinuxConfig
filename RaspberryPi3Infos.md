@@ -84,3 +84,7 @@ In `/boot/config.txt`:
 
 - http://raspberrypi.stackexchange.com/questions/14818/pause-omxplayer-after-set-time
 - https://github.com/popcornmix/omxplayer/issues/436
+
+## Troubleshooting:
+
+- VNC: "Cannot currently show the desktop". There is good chance that the SD card is full. Check with `df -h` and if 100% full, delete some files
