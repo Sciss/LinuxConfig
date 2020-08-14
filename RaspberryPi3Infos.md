@@ -72,6 +72,7 @@ In `/boot/config.txt`:
 - ssh server might need to be enabled through `sudo raspi-config` (advanced settings; newer versions: interfacing). With defaults, you need `ssh pi@10.0.0.1`. Default password is `raspberry`
 - find MAC address: `cat /sys/class/net/eth0/address`
 - copy ssh key so we can log in without entering password: `ssh-copy-id pi@<ip-address>`
+- find pis on the net: `nmap -sn 192.168.0.0/24` (finds IPs on this subnet mask)
 
 ## Misc:
 
