@@ -21,6 +21,10 @@ Note: Some of this stuff is old and probably outdated!
 - https://www.youtube.com/watch?v=p-Za8yzDXpU
 - https://www.youtube.com/watch?v=GQDQ_Z-NmHQ
 
+## Disable on-board sound card
+
+- in `/boot/config.txt` change `dtparam=audio=on` to `dtparam=audio=off`.
+
 ## Camera Module:
 
 - https://www.youtube.com/watch?v=ojJhLQBiv0I
