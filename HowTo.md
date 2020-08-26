@@ -294,6 +294,10 @@ When firewall causes IPv6 to hang:
 
     sudo sysctl -w net.ipv6.conf.all.disable_ipv6=1
 
+## Where are the wifi passwords
+
+    sudo cat /etc/NetworkManager/system-connections/<name-of-hotspot>
+
 # Git
 
 ## Resolve Merge Conflict
