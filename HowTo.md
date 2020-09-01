@@ -377,6 +377,10 @@ To release:
 
     sudo umount /tmp/ramdisk/
 
+## Check file system of a partition
+
+    sudo parted -l
+
 # Iceweasel
 
 ## Uninstall Flash
