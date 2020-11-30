@@ -18,6 +18,10 @@ The package `libtiff-tools` must be installed. Then
 
     pdftk A=in.pdf cat A<first-page>-<last-page> output out.pdf
 
+## Stamp
+
+    pdftk background.pdf stamp foreground.pdf output out.pdf
+
 ## Shrink PDF size
 
     gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/screen -dNOPAUSE -dBATCH  -dQUIET -sOutputFile=output.pdf input.pdf
