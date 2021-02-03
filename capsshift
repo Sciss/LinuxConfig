@@ -1,0 +1,6 @@
+#!/bin/sh
+xmodmap -e 'keycode 66 = Shift_L'
+xmodmap -e 'keycode 83 = G'
+xmodmap -e 'keycode 87 = X'
+xmodmap -e 'keycode 104 = Left'
+xmodmap -e 'keycode 82 = equal'

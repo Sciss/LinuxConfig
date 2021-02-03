@@ -1,2 +1,5 @@
-! Disable button 8
-pointer = 1 2 3 4 5 6 7 0 9 10 11 12
+keycode 66 = Shift_L
+keycode 83 = G
+keycode 87 = X
+keycode 104 = Left
+keycode 82 = equal

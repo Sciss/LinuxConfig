@@ -351,6 +351,12 @@ to
 
 This will be lost if the application is updated, though.
 
+## Remap keys
+
+Run `xev` to find the correct key codes. Then either run ad-hoc `xmodmap -e 'keycode 83 = G'` (keypad 4 is mapped to G), or add to `~/.Xmodmap` the line `keycode 83 = G`.
+
+For a list of keysym names see [here](https://wiki.linuxquestions.org/wiki/List_of_Keysyms_Recognised_by_Xmodmap).
+
 # Debian
 
 ## Recover password
