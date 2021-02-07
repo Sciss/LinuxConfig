@@ -20,3 +20,7 @@ Put the contents
 ```
 
 cf. https://superuser.com/questions/1113362/is-there-a-way-to-force-enable-reader-view-in-firefox-on-pages-where-the-icon-do/1190577#1190577
+
+# Search bar accidentally turned RTL
+
+This can be restored with `Ctrl`-`Shift`-`X`.
