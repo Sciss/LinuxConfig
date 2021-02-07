@@ -1,8 +1,8 @@
-# Get rid of horrid new search bar that hides search engines
+# Get rid of new search bar that hides search engines
 
 https://addons.mozilla.org/en-US/firefox/addon/old-search-fixed2
 
-# Stupid reader view disabling in Firefox 60
+# Reader view disabling in Firefox 60
 
 Force having reader view button:
 
