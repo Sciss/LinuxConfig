@@ -20,7 +20,15 @@ There can be corrupt alsastate / USB when accidentally disconnecting the device 
 
 As a result, the analog outputs are broken (output DC or nothing at all).
 
-The only reliable work-around is this:
+## new solution
+
+It seems much easier now to fix this: open `alsamixer` and find the last item `Scarlett 18i20 USB-Sync Clock Source`.
+This will report as `Internal` but it's corrupt. Switch it up to `S/PDIF` and `ADAT`, and back to `Internal`. Now the
+device should be properly set up.
+
+## old solution
+
+__OLD:__ The only reliable work-around is this:
 
 - turn off the Scarlett
 - connect it to the Mac Mini, and boot it up under OS X
