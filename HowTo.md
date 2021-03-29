@@ -450,4 +450,7 @@ _N.B.:_ To compare two directories, omit the directory name in the upstream dire
 
     rsync -rltDuv --dry-run --itemize-changes --exclude=.git --exclude=no_bak /data/projects/Almat/events /media/hhrutz/Almat1/  >changes1.txt
 
+## bash cd into script directory
+
+    cd "$(dirname "$0")"
 
