@@ -28,7 +28,7 @@ The package `libtiff-tools` must be installed. Then
 
 Where instead of `/screen` (smallest), one can also use `/ebook` (medium) or `/printer` (large).
 
-A resolution between 'printer' and 'ebook' can be achieved: `-dPDFSETTINGS=/printer -dColorImageResolution=200`
+A resolution between 'printer' and 'ebook' can be achieved: `-dPDFSETTINGS=/printer -dColorImageResolution=200 -dGrayImageResolution=200`
 
 ## Rotate PDF
 
