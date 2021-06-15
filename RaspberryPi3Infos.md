@@ -94,3 +94,12 @@ In `/boot/config.txt`:
 
 - VNC: "Cannot currently show the desktop". There is good chance that the SD card is full. Check with `df -h` and if 100% full, delete some files.
   Also make sure that the root file system has been expanded if using a compact image. (raspi-config: advanced options)
+
+## Creating a RAM disk
+
+```shell
+mkdir /tmp/ramdisk
+chmod 777 /tmp/ramdisk
+sudo mount -t tmpfs -o size=200m myramdisk /tmp/ramdisk
+```
+
