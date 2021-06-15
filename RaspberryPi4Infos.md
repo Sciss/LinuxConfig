@@ -78,3 +78,16 @@ And replace contents by
 
 `sudo vi /etc/wpa_supplicant/wpa_supplicant.conf` and delete `network=` entries.
 
+## Wiring-Pi
+
+Wiring-Pi is broken on the Pi 4. The pull up/down resistors cannot be configured.
+See [pi4j.com/1.3/install.html](https://pi4j.com/1.3/install.html#WiringPi_Native_Library) -- one needs to replace the installed versions
+with an unofficial one:
+
+    sudo apt remove wiringpi -y
+    sudo apt install git-core gcc make
+    cd ~/Documents/devel/
+    git clone https://github.com/WiringPi/WiringPi --branch master --single-branch wiringpi
+    cd wiringpi
+    sudo ./build
+
