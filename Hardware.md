@@ -56,3 +56,13 @@ Simple mixer control 'Line',0
 
 To enable the capture mode here, and set volume, use `amixer -c1 set Line cap` and (for example) `amixer -c1 set Line 6dB-`.
 
+# Brennenstuhl DT IP44 Zeitschaltuhr
+
+- plug in
+- press small 'R' button with paperclip to turn on and erase all programs
+- keep 'OK' pressed for 5 seconds to enter set-clock mode
+- set day-of-week with Up/Dn, confirm with Ok, and repeat for hours and minutes
+- press 'Mode' repeatedly until 'PROG 1 ON' starts blinking, press 'OK' to define PROG 1 ON
+- i.e. select week days and time; 'PROG 1 OFF' begins to blink. press 'OK' to define PROG 1 OFF
+- continue for further programs
+
