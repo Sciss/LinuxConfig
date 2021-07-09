@@ -84,6 +84,7 @@ In `/boot/config.txt`:
 - IntelliJ IDEA: https://pavelfatin.com/install-intellij-idea-on-raspberry-pi/
 - Disabling screen blanking: https://raspberrypi.stackexchange.com/questions/1384/how-do-i-disable-suspend-mode (`xset s off` and `xset -dpms`)
 - checking CPU temperature: `vcgencmd measure_temp`
+- installing custom fonts: copy `.ttf` files to `~/.fonts/` (create that directory if it does not exists), then run `fc-cache -v -f`
 
 ## Video:
 
