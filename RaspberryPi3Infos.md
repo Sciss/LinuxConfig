@@ -3,7 +3,7 @@ Note: Some of this stuff is old and probably outdated!
 ## Installation and Setup
 
 - https://www.youtube.com/watch?v=Th_3AvK-EbM
-- screen resolution: https://www.raspberrypi.org/documentation/configuration/config-txt.md
+- screen resolution: https://www.raspberrypi.org/documentation/configuration/config-txt/README.md
 - change keyboard layout to US: `/etc/default/keyboard` and `XKBLAYOUT="us"` instead of `gb`.
 - configure read-only SD: https://hallard.me/raspberry-pi-read-only/
 - auto-start: create a `foo.desktop` entry in `~/.config/autostart/`: https://raspberrypi.stackexchange.com/questions/8805/auto-login-into-lxde-and-auto-start-video-player-omxplayer#43350 ;
